@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우주 전투 게임</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>우주 전투 게임</h1>
+    </header>
+    <main>
+        <section id="description">
+            <h2>게임 설명</h2>
+            <p>이 게임은 플레이어가 우주선을 조종하여 운석을 피하고 레이저를 발사하여 운석을 파괴하는 게임입니다. 스코어를 최대한 많이 획득하고, 생명을 지켜 게임 오버를 피하세요!</p>
+        </section>
+        <section id="game">
+            <h2>게임 실행</h2>
+            <button id="startGame">게임 시작</button>
+            <canvas id="myCanvas" width="600" height="400"></canvas>
+        </section>
+        <section id="rules">
+            <h2>게임 규칙</h2>
+            <ul>
+                <li><strong>이동:</strong> W, A, S, D 키를 사용하여 우주선을 이동합니다.</li>
+                <li><strong>레이저 발사:</strong> 스페이스바를 눌러 레이저를 발사합니다.</li>
+                <li><strong>목표:</strong> 운석을 피하고 파괴하여 높은 점수를 얻습니다.</li>
+                <li><strong>게임 오버:</strong> 생명이 0이 되면 게임 오버가 됩니다.</li>
+            </ul>
+        </section>
+        <section id="status">
+            <h2>상태</h2>
+            <p>점수: <span id="score">0</span></p>
+            <p>생명: <span id="lives">2</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 우주 전투 게임</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
